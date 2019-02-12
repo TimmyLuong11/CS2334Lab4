@@ -10,7 +10,7 @@ public class AnimalTest
     /**
      * Test the empty Animal constructor and the getters
      */
-    public void emptyConstructorTest() throws AssertException
+    public void animalEmptyConstructorTest() throws AssertException
     {
         // Use the default constructor
         Animal animal = new Animal();
@@ -23,7 +23,7 @@ public class AnimalTest
     }
 
     // TODO: test full constructor, getters, and toString
-    public void testConstructorParams() throws AssertException
+    public void animalTestConstructorParams() throws AssertException
     {
     	String color1 = "Yellow";
     	String name1 = "Jeffery";
