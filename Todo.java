@@ -7,21 +7,21 @@ OU EMAIL____________: timothy.luong@ou.edu
 Tasks:
 1. Complete animal.java/animalTest.java checker
 2. Complete toString in Equipment
-3. Complete reader and writer 
-4. Complete method 
-5. Finish the format
+3. Complete Equipment.java 
+4. Complete EquipmentTest.java 
+5. Complete ZooTest.java
 
 Estimated Time (minutes):
 1. 30
 2. 10
-3. 30
+3. 10
 4. 30
-5. 10
+5. 30
 
 Actual Time (minutes):
 1. 60
 2. 2
-3. 60
+3. 15
 4. 60
-5. 10
+5. 45
 */}

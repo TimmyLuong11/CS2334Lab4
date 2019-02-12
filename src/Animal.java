@@ -145,10 +145,31 @@ public class Animal
         {
         	return true;	
         }
+        if(otherAni.getColor().equals(this.getColor()) && otherAni.getWeight() == this.getWeight())
+        {
+        	return true;	
+        }
+        if(otherAni.getColor().equals(this.getColor()) && otherAni.getHeight() == this.getHeight())
+        {
+        	return true;	
+        }
+        if(otherAni.getName().equals(this.getName()) && otherAni.getWeight() == this.getWeight())
+        {
+        	return true;	
+        }
+        if(otherAni.getName().equals(this.getName()) && otherAni.getHeight() == this.getHeight())
+        {
+        	return true;	
+        }
+        if(otherAni.getWeight() == this.getWeight() && otherAni.getHeight() == this.getHeight())
+        {
+        	return true;	
+        }
         if(otherAni.getName().equals(this.getName()) && otherAni.getColor().equals(this.getColor()) && otherAni.getWeight() == this.getWeight() && otherAni.getHeight() == this.getHeight())
         {
         	return true;	
         }
+
         /* return TODO; */
         else 
         {
