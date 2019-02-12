@@ -81,17 +81,20 @@ public class Equipment
     {
         return name;
     }
-
-	public int getCount() {
+	public int getCount() 
+	{
 		return count;
 	}
-	public double getTotalWeight() {
+	public double getTotalWeight() 
+	{
 		return totalWeight;
 	}
-	public double getTotalPrice() {
+	public double getTotalPrice() 
+	{
 		return totalPrice;
 	}
-	public String getDescription() {
+	public String getDescription()
+	{
 		return description;
 	}
 
@@ -123,7 +126,14 @@ public class Equipment
         Equipment otherEq = (Equipment)other;
 
         // Check that all fields match (name, count, totalWeight, totalPrice, and description):
-      
+        if(otherEq.getName().equals(this.getName()) && otherEq.getCount() == this.getCount() && otherEq.getTotalWeight() == this.getTotalWeight() && otherEq.getTotalPrice() == this.getTotalPrice() && otherEq.getDescription().equals(this.getDescription()))
+        {
+        	return true;	
+        }
         // TODO: finish method
+        else
+        {
+        	return false;
+        }
     }
 }
