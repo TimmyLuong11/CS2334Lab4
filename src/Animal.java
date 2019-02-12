@@ -141,39 +141,12 @@ public class Animal
         // Check that all fields match (color, name, weight, height):
         
         // TODO: finish this...
-        if(otherAni.getColor().equals(this.getColor()) && otherAni.getName().equals(this.getName()))
-        {
-        	return true;	
-        }
-        if(otherAni.getColor().equals(this.getColor()) && otherAni.getWeight() == this.getWeight())
-        {
-        	return true;	
-        }
-        if(otherAni.getColor().equals(this.getColor()) && otherAni.getHeight() == this.getHeight())
-        {
-        	return true;	
-        }
-        if(otherAni.getName().equals(this.getName()) && otherAni.getWeight() == this.getWeight())
-        {
-        	return true;	
-        }
-        if(otherAni.getName().equals(this.getName()) && otherAni.getHeight() == this.getHeight())
-        {
-        	return true;	
-        }
-        if(otherAni.getWeight() == this.getWeight() && otherAni.getHeight() == this.getHeight())
-        {
-        	return true;	
-        }
-        if(otherAni.getName().equals(this.getName()) && otherAni.getColor().equals(this.getColor()) && otherAni.getWeight() == this.getWeight() && otherAni.getHeight() == this.getHeight())
-        {
-        	return true;	
-        }
+        boolean sameColor = this.getColor().equals(otherAni.getColor());
+        boolean sameName = this.getName().equals(otherAni.getName());
+        boolean sameWeight = this.getWeight() == otherAni.getWeight();
+        boolean sameHeight = this.getHeight() == otherAni.getHeight();
 
         /* return TODO; */
-        else 
-        {
-        	return false;
-        }
+        return sameColor && sameName && sameWeight && sameHeight;
     }
 }
